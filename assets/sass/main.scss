@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+@import "variables";
+@import "mixins";
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(135deg, rgba(45, 42, 211, .3) 0%, rgba(108, 93, 173, .3) 100%), url('http://cdn.wonderfulengineering.com/wp-content/uploads/2015/05/Sydney-wallpaper-3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  color: white;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 50px;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  .fas {
+    margin-left: 10px;
+  }
+  .left-menu {
+    display: flex;
+    .logo {
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .city {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 20px;
+      font-weight: 100;
+    }
+  }
+  .right-menu {
+    display: flex;
+    .user-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 30px;
+        width: 30px;
+        opacity: 0.7;
+      }
+    }
+    .dropdown {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 20px;
+      font-weight: 100;
+    }
+    .post-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: capitalize;
+      font-weight: 300;
+      padding: 15px 20px;
+      background: $btn-post;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: #252326;
+        background: #9639b5;
+      }
+    }
+  }
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .Aligner {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Aligner-item {
+    max-width: 50%;
+  }
+  .menu {
+    ul {
+      li {
+        padding: 10px 15px;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+  .version-num {
+    background: #E8E8E8;
+    border-radius: 4px;
+    padding: 7px 15px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 0 20px;
+  }
+  a {
+    text-decoration: none;
+    color: #30395C;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: #43D4D6;
+    }
+  }
+}
